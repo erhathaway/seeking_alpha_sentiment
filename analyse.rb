@@ -27,10 +27,11 @@ articles.each do |article|
           when :negative
             score -=1
           end
-          puts score
         end
       end
       scores << score
+      puts 'URL: ' + article
+      puts 'Score: ' + score.to_s
     end
   rescue
     puts 'Error!'
